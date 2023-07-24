@@ -1,0 +1,66 @@
+@import 'the-new-css-reset';
+
+:root {
+  background-color: #e04f39;
+  font-family: sans-serif;
+}
+
+.app {
+  min-height: 100dvh;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: #2e2852;
+}
+
+.nav {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding-block-start: 3rem;
+  color: #eee9c1;
+  letter-spacing: 1px;
+  width: 100%;
+  font-weight: 600;
+
+  @media (max-width: 640px) {
+    gap: 4rem;
+    font-size: 1rem;
+  }
+}
+
+button {
+  padding-block-end: 3rem;
+
+  &:hover {
+    color: rgb(238 233 193 / .6);
+    cursor: pointer;
+  }
+}
+
+
+h1 {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  border: 1px solid #2e2852;
+  padding: 1rem;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+  background-color: rgb(238 233 193 / .6);
+  text-align: center;
+
+  @media (max-width: 640px) {
+    text-align: left;
+  }
+}
+
+.horizontal {
+  translate: -40px 0;
+}
+
+.vertical {
+  translate: -10px 0;
+}
