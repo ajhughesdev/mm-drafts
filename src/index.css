@@ -15,6 +15,10 @@
   color: #2e2852;
 }
 
+.container {
+  min-height: calc(100dvh - 1rem);
+}
+
 .nav {
   display: flex;
   font-size: 2rem;
@@ -57,13 +61,42 @@ h1 {
   }
 }
 
+img {
+  display: block;
+}
+
 .horizontal {
   translate: -40px 0;
 }
 
 .vertical {
+  /* translate: 70px 0; */
   margin: auto;
-  max-height: 1000px;
-  width: 812.5px;
+  height: 600px;
+  /* width: 812.5px; */
+}
 
+.footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  max-width: 1200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  & a:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-block-start: 2rem;
+  margin-inline: auto;
+  gap: 3rem;
+  margin-block-end: 4rem;
 }
